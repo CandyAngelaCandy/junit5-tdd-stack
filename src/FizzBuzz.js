@@ -39,7 +39,31 @@ function FizzBuzee(num) {
         return num;
     }
 
+    if(remainder3 == 0 && remainder5 == 0 && remainder7 != 0){
+        result = "FizzBuzz";
+
+        console.log(result);
+
+        return num;
+    }
+
+    if(remainder3 == 0 && remainder5 != 0 && remainder7 == 0){
+        result = "FizzWhizz";
+
+        console.log(result);
+
+        return num;
+    }
+
+    if(remainder3 != 0 && remainder5 == 0 && remainder7 == 0){
+        result = "BuzzWhizz";
+
+        console.log(result);
+
+        return num;
+    }
+
 }
 
-FizzBuzee(7);
+FizzBuzee(35);
 

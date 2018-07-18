@@ -63,7 +63,15 @@ function FizzBuzee(num) {
         return num;
     }
 
+    if(remainder3 == 0 && remainder5 == 0 && remainder7 == 0){
+        result = "FizzBuzzWhizz";
+
+        console.log(result);
+
+        return num;
+    }
+
 }
 
-FizzBuzee(35);
+FizzBuzee(105);
 

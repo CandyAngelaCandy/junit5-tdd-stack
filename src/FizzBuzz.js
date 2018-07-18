@@ -10,68 +10,58 @@ function FizzBuzee(num) {
     if(remainder3!=0 && remainder5!=0 && remainder7!=0){
         result = num;
 
-        console.log(result);
-
-        return num;
+        return result;
     }
 
     if(remainder3==0 && remainder5!=0 && remainder7!=0){
         result = "Fizz";
 
-        console.log(result);
-
-        return num;
+        return result;
     }
 
     if(remainder3!=0 && remainder5==0 && remainder7!=0){
         result = "Buzz";
 
-        console.log(result);
-
-        return num;
+        return result;
     }
 
     if(remainder3!=0 && remainder5!=0 && remainder7==0){
         result = "Whizz";
 
-        console.log(result);
-
-        return num;
+        return result;
     }
 
     if(remainder3 == 0 && remainder5 == 0 && remainder7 != 0){
         result = "FizzBuzz";
 
-        console.log(result);
-
-        return num;
+        return result;
     }
 
     if(remainder3 == 0 && remainder5 != 0 && remainder7 == 0){
         result = "FizzWhizz";
 
-        console.log(result);
-
-        return num;
+        return result;
     }
 
     if(remainder3 != 0 && remainder5 == 0 && remainder7 == 0){
         result = "BuzzWhizz";
 
-        console.log(result);
-
-        return num;
+        return result;
     }
 
     if(remainder3 == 0 && remainder5 == 0 && remainder7 == 0){
         result = "FizzBuzzWhizz";
 
-        console.log(result);
-
-        return num;
+        return result;
     }
 
 }
 
-FizzBuzee(105);
+function startNum(){
+    for (let i = 1; i <= 120; i++) {
+        console.log(FizzBuzee(i));
+    }
+}
+
+startNum();
 
